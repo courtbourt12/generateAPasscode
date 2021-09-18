@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = characterTypes();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -12,10 +12,11 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword);
 
 // Add a window prompt for users to enter their passcode.
 function generatePassword() {
+    debugger;
     var length = prompt ("How long would you like your passcode to be? Must be between 8-128.");
     number =parseInt(length);
     console.log(typeof(length));
@@ -30,8 +31,10 @@ function generatePassword() {
         length;
     }
 
-
+    
 function characterTypes() {
+
+    var finalResults = [];
     var lowerCase = window.confirm ("Do you want to include lower case letters?");
         if (lowerCase) {
             var lowerArray ="q w e r t y u i o p a s d f g h j k l z x c v b n m".split(" ");
@@ -61,9 +64,16 @@ function characterTypes() {
 
 
 for (i=0; i<number; i++) {
-    var finalResults = userEntries[Math.floor(Math.random()*userEntries.length)];
-    console.log(finalResults);   
-    return finalResults;   
+    var random = Math.floor(Math.random()*userEntries.length);
+    console.log(random);
+    finalResults += userEntries[random];
+    console.log(finalResults);  
+       
 }
+
+// Please keep in mind the passcode is in the console.log :)
+return finalResults;
+
 }
+
 }
