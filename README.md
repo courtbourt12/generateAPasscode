@@ -12,7 +12,7 @@ The HTML is fairly short due to the limited amount of text on the page. The majo
     * The body includes everything within the main box. 
 * Below shows an image of the HTML file structure.
 #
-<img src= "HTML.JPG">
+<img src= "Images\HTML.JPG">
 
 #
 ## CSS
@@ -27,7 +27,10 @@ The CSS had to organize the HTML in the desired locations, give the appropriate 
 * To create the two gray lines above and below the dashed border, I included hr tags in the html with their own unique ID's to implement appropriate padding sizes for the top and bottom.
 * The button border and div borders were straight forward.  The appropriate background color, border-radius, and font color were used for each.  Left-margins were used to center them within the parent box.
     * Below is an image of the button with proper formatting.
-    <img src="Button.jpg">
+    <img src="Images/Button.jpg">
+
+
+# BIG FAIL POINT
 
 #
 ## JavaScript
