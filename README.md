@@ -31,7 +31,7 @@ The CSS had to organize the HTML in the desired locations, give the appropriate 
 
 
 # BIG FAIL POINT
-I totally forgot that the CSS and HTML was given to us.... BUT I am glad I did them myself because it actually looked good. Feel free to check back at my previous git hub pushes to see it.  The thing I am still messing up on is the @media things. IT WILL NOT WORK. But now it will because I switched my HTML and CSS to the provided.
+I totally forgot that the CSS and HTML was given to us.... BUT I am glad I did them myself because it actually looked good. Feel free to check back at my previous git hub pushes to see it. **UPDATE: I totally thought I had pushed the original CSS and HTML code I had written, but I just checked the commits I had, and I guess I didn't submit that until after I changed it.  Sooo unfortunately you can't see that, except for my tiny HTML screenshot.  The thing I am still messing up on is the @media things. IT WILL NOT WORK. But now it will because I switched my HTML and CSS to the provided.
 
 #
 ## JavaScript
