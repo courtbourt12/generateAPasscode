@@ -31,7 +31,24 @@ The CSS had to organize the HTML in the desired locations, give the appropriate 
 
 
 # BIG FAIL POINT
+I totally forgot that the CSS and HTML was given to us.... BUT I am glad I did them myself because it actually looked good. Feel free to check back at my previous git hub pushes to see it.  The thing I am still messing up on is the @media things. IT WILL NOT WORK. But now it will because I switched my HTML and CSS to the provided.
 
 #
 ## JavaScript
 ### And Finally, Add the Muscle
+This was pretty challenging to me in a few ways:
+
+* I was not able to get the passcode to display in the beginning.  My original for loop to get the final result was - 
+                            
+                             finalResults +- userEntries[random];
+
+    In a way, that worked because it was showing a final answer in the console log, but it was showing each string of numbers/letters/symbols as a new random variable was added.  I ended up thinking about this just today that maybe I just needed to set the above code as its own variable.  Now I have that set to
+
+                     var isThisIt = finalResults +- userEntries[random];
+    And is this it? Yes it is.  I saw it first in the console log, and then I moved the top function into the bottom of my own function to display the answer on the screen.  I also removed the function from the password variables.
+
+* I was not successfully getting the windows.confirm to allow the selection of whether or not the specified characters were being added into the passcode array.  I tried simply putting the original variable name calling the windows.confirm, but it did not work.  I was thinking that if I just called the variable name alone, it would treat it as a boolean and count it as true.  This was not the case, so I changed it to 
+
+                                  if (variable===true){};
+
+    This was the proper way to go about setting up the if statement and will now inculde or disclude the proper characters upon user selection.
