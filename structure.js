@@ -11,18 +11,19 @@ generateBtn.addEventListener("click", generatePassword);
 // Add a window prompt for users to enter their passcode.
 function generatePassword() {
     var length = prompt ("How long would you like your passcode to be? Must be between 8-128.");
-    number =parseInt(length);
-    console.log(typeof(length));
-    console.log(length);
-        if (7<length<129) {
-        characterTypes()
-    } else if (length>128) {
-        alert("Length cannot be greater than 128.");
-        length;
+    number = parseInt(length);
+    console.log(typeof(number));
+    console.log(number);
+        if (number>128) {
+            alert("Length cannot be greater than 128.");
+            return length;
+    } else if (number<8) {
+        alert("Length cannot be less than 8.");
+        return length;
     } else {
-        alert("Length cannot be smaller than 8.");
-        length;
+        characterTypes();
     }
+}
 
     
 function characterTypes() {
@@ -71,4 +72,3 @@ console.log(isThisIt);
 
 }
 
-}
